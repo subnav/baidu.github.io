@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld</title>
+    <style>
+        p {
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello World！</p>
+    <div>
+        <input type="button" value="变为红色" id="red">
+        <input type="button" value="复原" id="restore">
+    </div>
+
+    <script>
+        let red = document.querySelector('#red');
+        let restore = document.querySelector("#restore");
+        let p = document.querySelector("p");
+
+        red.onclick = () => {
+            p.style.color = "red";
+        }
+
+        restore.onclick = () => {
+            p.style.color = "black"
+        }
+    </script>
+</body>
+
+</html>
