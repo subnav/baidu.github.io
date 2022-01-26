@@ -38,8 +38,14 @@ header {
   background: rgba(43, 43, 52, 0.5);
   z-index: 2;
 }
-header .loge {
+header .logo {
+  display: flex;
+  align-items: center;
   font-size: 24px;
+  margin-left: 50px;
+}
+.logo img {
+  width: 50px;
 }
 header nav {
   position: relative;
