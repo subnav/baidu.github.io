@@ -1,0 +1,62 @@
+.cascade_container {
+  position: relative;
+}
+.cascade_container #cure {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  z-index: 2;
+  text-align: center;
+  line-height: 50px;
+  color: #333;
+  font-weight: 700;
+}
+.cascade_container li {
+  color: #949494;
+}
+.cascade_container .cur {
+  color: #333;
+  font-weight: 700;
+  background-color: #fff;
+}
+.cascade_container .cascade_into {
+  position: absolute;
+  bottom: -350px;
+  left: 0;
+  width: 570px;
+  height: 350px;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: -10px 10px 15px rgba(44, 43, 43, 0.14);
+}
+.cascade_container .cascade_into ul {
+  height: 100%;
+  scrollbar-width: none;
+  overflow: scroll;
+}
+.cascade_container .cascade_into ul::-webkit-scrollbar {
+  display: none;
+}
+.cascade_container .cascade_into .child0 {
+  float: left;
+  width: 130px;
+}
+.cascade_container .cascade_into .child0 .child {
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #e7e7e7;
+}
+.cascade_container .cascade_into .child1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.cascade_container .cascade_into .child1 li {
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
