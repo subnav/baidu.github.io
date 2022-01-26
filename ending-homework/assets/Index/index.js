@@ -11,7 +11,7 @@
                     {"name":"中国人民大学","child":null},
                     {"name":"北京交通大学","child":null},
                     {"name":"北京科技大学","child":null},
-                    {"name":"北京工业大学","child":null},
+                    {"name":"中央政法大学","child":null},
                     {"name":"北京航空航天大学","child":null},
                     {"name":"北京化工大学","child":null},
                     {"name":"北京邮电大学","child":null},
