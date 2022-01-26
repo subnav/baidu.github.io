@@ -6,8 +6,8 @@
       // 显示函数的设置
       popAlert.prototype.show = function(){
         //   创建一个div元素
-        var Odiv = document.createElement('div');
-        var that = this;
+        const Odiv = document.createElement('div');
+        const that = this;
         //   给div添加class属性，这里使用的是多个属性的添加，同时将opt的class传递过来
         Odiv.classList.add('alert',this.opt['class']||'' );
         //   设定div包含的内容
@@ -16,7 +16,6 @@
         Odiv.style.zIndex = -2;
         // 把div元素整体插入body内，appendChild是插在最后面
         document.body.appendChild(Odiv);
-        // 点击close按钮，则影藏此按钮的父级元素
         if(Odiv.style.display === 'block' && Odiv.className === "alert alert-danger"){
             setTimeout(() =>{
                 Odiv.style.display = 'none';
@@ -30,7 +29,7 @@
       };
 
       // 设置一个空对象：alert
-      var alert = {};
+      let alert = {};
       //   把popAlert 挂在alert下面
       alert = {
           'popAlert' : popAlert,

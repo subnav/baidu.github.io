@@ -235,22 +235,26 @@ footer .footer_right td {
   background-color: #fff;
   border-radius: 16px;
   box-shadow: -10px 10px 15px rgba(44, 43, 43, 0.14);
-  display: flex;
-  justify-content: space-between;
+  padding: 35px 0;
 }
 .sign_up .select {
+  height: 90px;
+  float: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .sign_up .select:first-of-type {
   width: 190px;
+  margin: 0 20px 0 40px;
 }
 .sign_up .select:nth-child(2) {
   width: 150px;
+  margin: 0 20px;
 }
 .sign_up .select:last-of-type {
   width: 260px;
+  margin: 0 40px 20px 0;
 }
 .sign_up .select span {
   font-size: 16px;
@@ -297,4 +301,32 @@ footer .footer_right td {
 }
 .sign_up #button:active {
   background-color: #35a0ec;
+}
+.success_div {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 960px;
+  height: 120px;
+  padding: 35px 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: -10px 10px 15px rgba(44, 43, 43, 0.14);
+  z-index: 2;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+}
+.success_div > .close {
+  position: absolute;
+  bottom: -5px;
+  right: 15px;
+  font-size: 16px;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+.success_div > .close:hover {
+  color: skyblue;
 }
